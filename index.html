@@ -2,25 +2,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="css/style.css" /> <!--CSS를 적용해주는 파일 가져오기-->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Welcome to Kokoa Talk</title>
+        <title>Welcome to Kokoa Clone</title>
     </head>
     <body>
         <!-- 상단바의 역할 -->
         <div class="status-bar"> 
             <div class="status-bar__column">
                 <span>No Service</span>
-                <!-- TODO: Wifi Icon place -->
+                <i class="fa-solid fa-wifi"></i>
             </div>
             <div class="status-bar__column">
                 <span>18:43</span>
             </div>
             <div class="status-bar__column">
                 <span>110%</span>
-                <!-- TODO: Battery Icon -->
-                <!-- TODO: Lightning Icon -->
+                <i class="fa-solid fa-battery-full"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
             </div>
         </div>
+
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+            <p class="welcome-header__text">
+                If you have a Kokoa Account, long in with your email or phone number.
+            </p>
+        </header>
+
+        <form id="login-form">
+            <input type="text" placeholder="Email or phone number"/ >
+            <input type="password" placeholder="Password" />
+            <input type="submit" value="Log In" />
+            <a href="#">Find Kokoa Account or Password</a>
+        </form>
+
+
+        <!--Script tag는 body tag를 닫기 직전에 위치해야 한다.-->
+        <script src="https://kit.fontawesome.com/294789380c.js"
+        crossorigin="anonymous"></script> 
     </body>
 </html>
