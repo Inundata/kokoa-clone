@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap'); /* 글씨 import */
+@import "reset.css"; /* 기본 설정 reset */
+@import "variables.css";
+/* Components */
+@import "components/status_bar.css"; /* status bar import */
+
+/* Screens */
+@import "screens/login.css";
+
+/* Applying global */
+body {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
